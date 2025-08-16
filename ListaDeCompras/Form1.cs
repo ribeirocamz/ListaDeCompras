@@ -80,6 +80,8 @@ namespace ListaDeCompras
             if (resposta == DialogResult.Yes)
             {
                 libItens.Items.Clear();
+                MessageBox.Show("A lista está vazia!", "Sucesso!",
+                MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
@@ -112,7 +114,7 @@ namespace ListaDeCompras
 
 
                 //Mostrar qual item foi removido da lista
-                MessageBox.Show($"{libItens.Items} foi removido da lista", "Sucesso!",
+                MessageBox.Show($"{itemRemovido} foi removido da lista", "Sucesso!",
                 MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
